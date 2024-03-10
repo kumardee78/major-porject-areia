@@ -1,0 +1,929 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { scroll-behavior: smooth;}
+ul {list-style-type: none;}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+body h1,h2,h3,h4{
+    font-family: "Montserrat", sans-serif;
+    color: #484a46;
+}
+body .para, #service .text .para, #intro .intro .itali-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #787976;
+    margin-bottom:1rem;
+}
+body h2{
+    font-size: 1.75rem;
+    margin-bottom:1.3rem;
+}
+#service .text .title, .intro .title, #call_me .title, #project .title, #about .title, #contact .text .title{
+    color: #14bf98;
+    font-size: 0.813rem;
+    font-family: "Montserrat",sans-serif; 
+    margin-bottom: 0.8rem;
+}
+#service, #intro, .testimonial, #contact, #about, .consultant, #project{
+    padding: 5rem 6rem;
+}
+#service, .testimonial, #project, .consultant{
+    text-align: center;
+}
+#service, .testimonial, .consultant{
+    background-color:#FBFBFB;
+}
+
+/* -------------------header-section------------------------------------------------ */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.12rem 5rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+nav img{
+    width: 7rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul .home{
+    color: #14bf98;
+}
+nav ul a{
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    padding: 0.5rem 0.5rem;
+    font-size: 14px;
+    margin: 0 0.125rem;
+    color: #fff;
+}
+nav ul .icon{
+    position: relative;
+}
+nav ul .icon span{
+    width: 1.7rem;
+    height: 1.6rem;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #14bf98;
+    display: block;
+}
+nav ul .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav ul li:hover a{
+    color:#14bf98;
+}
+nav ul .icon:hover span{
+    background-color: white;
+}
+nav ul .icon:hover i{
+    color:#14bf98;
+}
+
+/* ------------------------------------home- section-------------------------------------- */
+
+#home{
+    background-image: url(header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    position: relative;
+}
+.text-area {
+    text-align: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+#home .text-area h1{
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+#home .text-area p{
+    color: #DFE5EC;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+}
+#home .text-area .button a{
+    color: #FFFFFF;
+    padding: 1.2rem 2.13rem;
+    background-color: #14bf98;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: solid #14bf98 ;
+}
+#home .text-area .button a:hover{
+    color: #14bf98;
+    border: solid #14bf98;
+    background-color: transparent;
+}
+.darker-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+/* --------------------------------------intro-section-------------------------------------------- */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+}
+.intro .left {
+    width: 40%;
+    padding: 2rem ;
+}
+.intro .right{
+    width: 52%;    
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+.intro .right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    transition: all 200ms;
+}
+.intro .right img:hover{
+    transform: scale(1.2);
+}
+#intro .lower{
+    padding: 0 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+#intro .lower .icon-section{
+    width: 30%;
+    padding: 0 1rem;
+}
+#intro .lower .icon{
+    width: 6.3rem;
+    position: relative;
+}
+#intro .lower .icon span{
+    display: block;
+    width: 6rem;
+    height: 5rem;
+    background-color: #14bf98;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin-bottom: 1.3rem;
+}
+#intro .lower .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: white;
+}
+#intro .lower .icon-section h3{
+    margin-bottom: 0.6rem;
+}
+/* -------------------------service-section----------------------------------------------------------- */
+
+#service .img-text-section{
+    display: flex;
+    justify-content: space-between;
+}
+#service h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    width: 50%;
+}
+#service .img-text-section .cup{
+    width: 32%;
+    border: 0.1rem solid #14bf98;
+    border-radius: 0.5rem;
+    position: relative;
+    text-align: left;
+    margin: 1rem 1.5rem;
+}
+#service .img-text-section .cup .text-section{
+    padding: 2rem 1rem;
+}
+#service .text-section span{
+    color: #14bf98;
+}
+#service .text-section ul{
+    color: #787976;
+    font-family: "Open Sans", sans-serif;
+    list-style-type:square;
+    padding-left: 1.3rem ;
+    margin-bottom: 1.5rem;
+}
+#service .text-section ul li::marker{
+    color: #14bf98;
+}
+#service .img-text-section  .cup img{
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+#service .img-text-section .cup .text-section h3, h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#service .img-text-section .cup .text-section a{
+    background-color: #14bf98;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 0.3rem;
+    font-family: "Montserrat",sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 95%;
+    left: 30%;
+}
+#service .img-text-section .cup .text-section a:hover{
+    background-color: white;
+    border: 0.15rem solid #14bf98;
+    color: #14bf98;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.section-double{
+    padding: 3rem 0;
+}
+.section-double .upper, .section-double .lower{
+    display: flex;
+}
+.section-double .upper .image{
+    background-image: url(landscape\ 1.jpg);
+    background-size: cover;
+}
+.section-double .upper .image, .section-double .lower .image{
+    width: 50%;
+    height: 35rem;
+}
+.section-double .upper .text, .section-double .lower .text{
+    padding:5.5rem 6rem;
+    width: 50%;  
+}
+.section-double .upper .text .numb-list{
+    margin-bottom: 2.5rem;
+}
+.section-double .upper .text .circle{
+    width: 10%;
+    height: 10%;
+    border:  solid;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+}
+.section-double .upper .text .circle-1{
+    width: 30%;
+    height: 10%;
+    padding: 0 0.5rem;
+    border:  solid #14bf98;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 0.3rem;
+    background-color: #14bf98;
+    color: white;
+}
+.section-double .upper .text .numb-list p{
+    padding-left: 2.7rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #787976;
+    margin-bottom: 1.5rem;
+    margin-top: 0.3rem;
+}
+.section-double .upper .text .numb-list .how{
+    color: #14bf98;
+}
+.section-double .upper .text .numb-list:hover span{
+    color: #14bf98;
+}
+.section-double .upper .text .numb-list:hover .circle-1{
+    color: white;
+}
+.section-double .lower .image{
+    background-image: url(landscape\ 2.jpg);
+    background-size: cover;
+}
+.section-double .upper span{
+    color: #484a46;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.section-double .lower .text .icon{
+    display: flex;
+    justify-content: space-between;
+}
+.section-double .lower .text .icon {
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #14bf98;
+    margin-bottom: 2rem;
+}
+.section-double .lower .text  h4{
+    margin-bottom: 1rem;
+    text-align: start;
+    font-size: 1.3rem;
+}
+.section-double .lower .text .icon .light{
+    opacity: 0.5;
+}
+.section-double .lower .text .percentage span{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.section-double .lower .text .percentage .blank1, .blank2, .blank3{
+    height:1.4rem;
+    width: 28rem;
+    background-color: #18c8a0;
+    margin-top: 0.3rem;
+    margin-bottom: 0.9em; 
+}
+.section-double .lower .text .percentage .blank2{
+    width: 20rem;
+}
+.section-double .lower .text .percentage .blank3{
+    width: 24rem;
+}
+.section-double .lower .text .para a{
+    text-decoration: underline;
+    color: #14bf98;
+}
+/* ---------------------customer-testimonials-section--------------------------------------------------------- */
+
+
+.testimonial .customer-testimonial{
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-columns: 34%;
+    grid-auto-flow: column;
+}
+.testimonial .customer-testimonial::-webkit-scrollbar{
+    display: none;
+}
+.testimonial .customer-testimonial .images{
+    margin-right:3rem;
+}
+.testimonial .customer-testimonial img{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1.3rem;
+}
+.testimonial .customer-testimonial .images .content{
+    color: #787976;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+#intro .intro .name, .testimonial .customer-testimonial .images .name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #484A46;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ------------------------------------callMe-section----------------------------------------------------- */
+
+#call_me{
+    color: #dfe5ec;
+    display: flex;
+    justify-content: space-around;
+    background-color: #153e52;
+    padding: 5.5rem 5rem;
+}
+#call_me h2{
+    color:#FFFFFF;
+}
+#call_me .paragraph{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+#call_me .text{
+    width:45%;
+    padding-top:1rem;
+    padding-left: 2rem;
+}
+#call_me .text ul{
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #dfe5ec;
+    list-style-type: square;
+    margin-bottom: 1rem;
+    padding-left: 1.3rem;
+    line-height: 2;
+}
+#call_me .text ul li::marker{
+    color: #14bf98;
+}
+ #call_me .form{
+    width: 40%;
+    font-family: "Open Sans", sans-serif;
+}
+#call_me .form input[type="text"],
+#call_me .form textarea {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.3125rem;
+  border: 1px solid ;
+  border-radius: 0.25rem;
+  background-color: #2a5d77;
+  color: #787976;
+  width: 100%;
+}
+#call_me .form input[type="text"] {
+  height: 3rem;
+}
+#call_me .form textarea {
+  height: 8rem;
+}
+#call_me .form .input-label {
+   
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+#call_me .form .input-label label {
+  position: absolute;
+  left: 1.375rem;
+  top: 0.8125rem;
+  color: #FFFFFF;
+  font-size: 0.87rem;
+  transition: all 300ms;
+}
+#call_me .form input[type="text"]:focus+label,
+#call_me .form textarea:focus+label {
+  font-size: 0.7rem;
+  top: 0.5rem;
+}
+#call_me .form .agree,
+#call_me .form .agree a {
+  font-size: 0.875rem;
+  color: #DFE5EC;
+}
+#call_me .form .agree a {
+  text-decoration: underline;
+}
+#call_me .form button {
+    font-family: "Montserrat";
+    width: 100%;
+    background-color: #14bf98;
+    color: #fff;
+    border: 2px solid #14bf98;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: all 300ms;
+}
+#call_me .form button:hover {
+  background-color: #153e52;
+  color: #14bf98;
+}
+
+/* ------------------------project-section-------------------------------------------------------------- */
+
+#project .button a{
+    background-color: #f1f4f7;
+    color: #7b7e85;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.35rem 1.1rem;
+    margin: 0 0.25rem;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+#project .button a.show-all{
+    background-color: #14bf98;
+    color: #fff;
+}
+#project .images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+}
+#project .project{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+#project .project img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 300ms;
+}
+#project .project p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    transition: all 300ms;
+} 
+#project .project:hover img {
+    transform: scale(1.2);
+}
+#project .project:hover p {
+    opacity: 1;
+}
+
+/* --------------------consultant-section------------------------------------------------------------------ */
+
+.testimonial .para, .consultant .para{
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-bottom: 4rem;
+}
+.consultant .photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consultant .photos img{
+    display: block;
+    transition: all 300ms;
+}
+.consultant .teams div{
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+}
+.consultant .photos .teams{
+    padding: 0 1rem;
+}
+.consultant .photos .name{
+    color: #787976;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.consultant .photos .position{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #484A46;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.consultant .photos .teams div:hover img{
+    transform: scale(1.15);
+}
+.consultant .photos .teams .social-icon{
+    display: flex;
+    justify-content: center;
+}
+.consultant .photos .teams .social-icon .icons{
+    position: relative;
+    margin-right: 0.5rem;
+}
+.consultant .photos .teams .social-icon .icons span{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #14bf98;
+}
+.consultant .photos .teams .social-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+}
+.consultant .photos .teams .social-icon .icons:hover span{
+    background-color: white;
+    transition: all 300ms;
+}
+.consultant .photos .teams .social-icon .icons:hover i{
+    color: #14bf98;
+    transition: all 300ms;
+}
+
+/* ----------------------about-section------------------------------------------------------------------- */
+
+#about{
+    display: flex;
+    justify-content: space-between;
+}
+#about img{
+    display: block;
+    width: 100%;
+    border-radius: 0.3rem;  
+}
+#about .left-side{
+    width: 47%;
+    padding: 0 1rem;
+}
+#about .right-side{
+    width: 50%;
+    padding:0 2rem;
+}
+#about .right-side ul{
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #787976;
+    list-style-type: square;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+#about .right-side ul li::marker{
+    color: #14bf98;
+}
+#about .right-side .dynamic-value{
+    display: flex;
+    justify-content: space-between;
+}
+#about .right-side .dynamic-value .number{
+    font-size: 2.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #14bf98;
+    vertical-align: middle;
+}
+#about .right-side .dynamic-value div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+#about .right-side .dynamic-value .text{
+    vertical-align: middle;
+    font-family: "Open Sans";
+    color: #787976;
+    margin-left: 0.5rem;
+}
+
+/* -----------------contact-section----------------------------------------------------------------------- */
+
+#contact {
+    background-color:#FBFBFB;
+    display: flex;
+    justify-content: space-between;
+}
+#contact .text{
+    padding: 1rem;
+    width: 50%;
+}
+#contact .text ul{
+    color: #787976;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom:2.2rem;
+}
+#contact .text ul{
+    display: flex;
+    gap: 1rem;
+}
+#contact .text ul li i{
+    transform: rotateY(180deg);
+}
+#contact .text ul a{
+    text-decoration: underline;
+    color: #787976;
+    display: inline-block;
+}
+#contact .text h3{
+    font-size: 1.4rem;
+}
+#contact .text .social-icon{
+    display: flex;
+}
+#contact .text .social-icon .icon{
+    position: relative;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+#contact .text .social-icon .icon span{
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #14bf98;
+}
+#contact .text .social-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+}
+#contact .text .social-icon .icon:hover span{
+    background-color: white;
+    transition: all 300ms;
+}
+#contact .text .social-icon .icon:hover i{
+    color: #14bf98;
+    transition: all 300ms;
+}
+.form, #call_me .form{
+    width: 40%;
+    font-family: "Open Sans", sans-serif;
+}
+#contact .form input[type="text"],
+#contact .form textarea {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.3125rem;
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #787976;
+  width: 100%;
+}
+#contact .form input[type="text"] {
+  height: 3rem;
+}
+#contact .form textarea {
+  height: 8rem;
+}
+#contact .form .input-label {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+#contact .form .input-label label {
+  position: absolute;
+  left: 1.375rem;
+  top: 0.8125rem;
+  color: #787976;
+  font-size: 0.87rem;
+  transition: all 300ms;
+}
+#contact .form input[type="text"]:focus+label,
+#contact .form textarea:focus+label {
+  font-size: 0.7rem;
+  top: 0.5rem;
+}
+#contact .form .agree,
+#contact .form .agree a {
+  font-size: 0.875rem;
+  color: #787976;
+}
+#contact .form .agree a {
+  text-decoration: underline;
+}
+#contact .form button {
+    font-family: "Montserrat";
+  width: 100%;
+  background-color: #14bf98;
+  color: #fff;
+  border: 2px solid #14bf98;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 300ms;
+}
+#contact .form button:hover {
+  background-color: #fff;
+  color: #14bf98;
+}
+
+/* ------------------------footer-section----------------------------------------------------------------- */
+.footer{
+    background-color: #113448 ;
+    padding-top:4.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.footer .upper{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .upper .left{
+    width: 45%; 
+    color: #dfe5ec;
+    padding: 0 1rem;
+}
+.footer .upper .left .heading, footer .upper .right .heading{
+    font-size: 1.25rem;
+    color:#FFFFFF;
+    margin-bottom: 0.75rem;
+}
+.footer .upper .left p, footer .upper .right a{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: #DFE5EC;
+    font-family: "open Sans", sans-serif;
+}
+.footer .upper .right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .upper .right a{
+    text-decoration: underline;
+    font-family: "Open Sans";
+    margin-bottom: 0.5rem;
+}
+.footer .lower{
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: #dfe5ec;
+    font-size: 0.875rem;
+}
+.footer .lower p{
+    margin-bottom: 1rem;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:1210px){
+
+    .text-area{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1030px) {
+    #intro{
+        padding: 2rem;
+    }
+    #into .left{
+        width: 50%;padding: 0;
+    }
+    #intro .right{
+        width:50%;
+    }
+    
+
+@media screen and (max-width:960px){
+
+    nav{
+        padding: 1.8rem ;
+    }
+    .text-area{
+        width: 80%;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+    .text-area h1{
+        font-size: 2.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+
+
+
+
+
+}
+@media  screen and (max-width:) {
+    
+}
